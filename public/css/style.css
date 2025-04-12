@@ -1,0 +1,59 @@
+.banner {
+    background: url("https://source.unsplash.com/1600x500/?fashion") no-repeat
+        center center;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.color-option input {
+    display: none;
+}
+.color-option label {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.color-option input:checked + label {
+    border: 2px solid black;
+}
+.size-option input {
+    display: none;
+}
+.size-option label {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.size-option input:checked + label {
+    background-color: #007bff;
+    color: white;
+}
+.cart-table th,
+.cart-table td {
+    vertical-align: middle;
+    text-align: center;
+}
+.cart-summary {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.cart-item:last-child {
+    border-bottom: none;
+}
